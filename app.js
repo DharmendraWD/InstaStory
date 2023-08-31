@@ -30,7 +30,7 @@ let dps =[
         story:"https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lkfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"
     },
     {
-        dp:"Images/rsz_img_2410.jpg", 
+        dp:"Images/IMG_2410.jpg", 
         story:"Images/IMG_2410.JPG"
     },
     {
