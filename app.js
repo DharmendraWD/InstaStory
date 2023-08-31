@@ -31,7 +31,7 @@ let dps =[
     },
     {
         dp:"Images/IMG_2410.jpg", 
-        story:"Images/IMG_2410.JPG"
+        story:"Images/IMG_2410.jpg"
     },
     {
         dp:"https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60", 
