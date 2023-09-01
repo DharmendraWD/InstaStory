@@ -68,15 +68,27 @@ function handleClick(clickedDiv) {
 
 divImage2= (dps[divId].dp);
     fullScreenStory.style.display="flex";
+    fullScreenStory.innerHTML= `</div><img src="${dps[divId].story}" alt=""></img>`
+storyDpBox.style.opacity=0;// display None storyIcons when click on story icon and show image
 
-    fullScreenStory.innerHTML= `<img src="${dps[divId].story}" alt=""></img>`
-    
-storyDpBox.style.opacity=0;// display None storyIcons when click on story icon 
-    
-    
+setTimeout(() => {
+    fullScreenStory.style.display="none";
+/*!!!!!!!!!This code does is: The problem was when fullStory was being seen 
+then the opacity of storyDpBox was being 0 and even after disappearing of FullStory
+ the storyDpbox was not being appear so this line does is when fullStory Disappears then
+  storyDpBox appears--------*/
+    if (window.getComputedStyle(fullScreenStory).display === "none") {
+        storyDpBox.style.opacity=1;
+    } else {
+        storyDpBox.style.opacity=0;
+    }
+    // !!!!!!!!!
+}, 3000);
+
 }
+
 fullScreenStory.addEventListener("click", function(){
     storyDpBox.style.opacity=1;// display story Icons when click on Images
     fullScreenStory.style.display="none";
-    console.log("hdsk")
+
 })
