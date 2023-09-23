@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1682686581220-689c34afb6ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    font-family: Kurale;
+    overflow: hidden;
+    background-color: rgb(20, 22, 34);
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+
+}
+.container1{
+    width: 360px;
+    height: 600px;
+    position: relative;
+backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgb(158, 153, 153);
+    border-radius: 12px;
+    bottom: 15px;
+}
+.container1 p{
+text-align: center;
+position: relative;
+top: 50%;
+}
+.storyDpBox{
+    height: 120px;
+    /* width: 100%; */
+    padding: 20px 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    transition: .3s ease-in-out;
+    margin-left: 2px;
+    overflow-y: hidden;
+}
+.storyDpBox::-webkit-scrollbar{
+   display: none;
+}
+.storyDp{
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+.storyDp img{
+    width: 80px;
+    /* object-position: center; */
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%
+}
+.fullScreenStory{
+    width: 100%;
+height:90%;
+position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  
+}
+.fullScreenStory p, .container1 p{
+color: white;
+font-size: 20px;
+}
+.fullScreenStory img{
+max-height: 100%;
+max-width:360px;
+margin: 0;
+padding: 0px 1px;
+}
+.fullScreenStory img, .storyDp img{
+cursor: pointer;
+}
+/* #bar{
+    width: 100%;
+    height: 10px;
+border-radius: 12px;
+border: .2px solid white;       TimimgBar is in Progress 
+    position: absolute;
+    top: 0;
+} */
